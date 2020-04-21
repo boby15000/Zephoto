@@ -1,0 +1,40 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Christophe Zerbone - Photographe professionnel - Var - Toulon{% endblock %} 
+ 
+{% block CSS %}
+	<link rel="stylesheet" href="{{ asset('bundles/app/css/zephoto/baseZephoto.css') }}" />
+	<link rel="stylesheet" href="{{ asset('bundles/app/css/exception/error.css') }}" />
+{% endblock %}
+
+{% block Body %}
+	<div class="row row-1">
+		<div class="col-xs-24"></div>
+	</div>
+	<div class="row row-2">
+		<div class="col-md-6 licorne">
+			<a href="{{ path('Accueil') }}"><img class="img-responsive" src="{{ asset('bundles/app/images/exception/zecorne.png') }}"></a>
+		</div>
+		<div class="col-md-13 erreur">
+			{% if status_code  == 4040 %}
+				<img class="img-responsive" src="{{ asset('bundles/pages/images/LogoFormation.png') }}">
+			{% elseif status_code  == 5000 %}
+				<img class="img-responsive" src="{{ asset('bundles/pages/images/LogoTarif.png') }}">
+			{% elseif status_code  == "A Propos" %}
+				<img class="img-responsive" src="{{ asset('bundles/pages/images/LogoAPropos.png') }}">
+			{% elseif status_code  == "Mentions" %}
+				<img class="img-responsive" src="{{ asset('bundles/pages/images/LogoMentions.png') }}">
+			{% else %}
+				<p>Erreur {{ status_code }},<br>La page demandée n'existe pas.</p>
+			{% endif %}		
+		</div>
+		<div class="col-md-5 module">
+			<p>« Apparemment, vous avez emprunté un lien magique menant dans un monde merveilleux qui hélas, n’existe pas.<br>
+			Cliquez sur la Zècorne pour revenir à la réalité ! »</p>
+			<span class="pull-right">Christophe</span>
+			<img src="{{ asset('bundles/app/images/exception/LogoErreur.png') }}">
+		</div>
+	</div>
+{% endblock %}
+
+

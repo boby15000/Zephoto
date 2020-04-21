@@ -1,0 +1,45 @@
+galerie:
+    resource: "@GalerieBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+authentification:
+    resource: "@AuthentificationBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+pages:
+    resource: "@PagesBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+partenaire:
+    resource: "@PartenaireBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+livre_or:
+    resource: "@LivreOrBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+img_de_fond:
+    resource: "@ImgDeFondBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+contact:
+    resource: "@ContactBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+elfinder:
+     resource: "@FMElfinderBundle/Resources/config/routing.yml"
+
+fos_user :
+    resource : "@FOSUserBundle/Resources/config/routing/all.xml"

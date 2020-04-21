@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Inconnu{% endblock %}</title>
+        <meta charset="UTF-8" />
+        <link rel="alternate" href="http://www.zephoto.fr" hreflang="fr-fr"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Christophe, photographe Varois et disponible dans toute la France met son talent et sa sensibilité à votre service pour immortaliser vos plus grands moments. Il est à votre écoute et met tout en œuvre  pour réaliser vos projets selon vos envies.">
+        {% block motsclef %}<meta name="keywords" content="ZERBONE Christophe, photographie,photographies, var, formation photo,formations photos,mariages,Carnoules">{% endblock %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120620081-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-120620081-1');
+        </script>
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/jquery-ui.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/jquery-ui.theme.min.css') }}" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        {% block CSS %}{% endblock %}
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            {% block Body %}{% endblock %}
+        </div>
+        <script src="{{ asset('bundles/app/js/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ asset('bundles/app/js/jquery-ui.min.js') }}"></script>
+        <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
+        {% block JQuery %}{% endblock %}
+    </body>
+</html>

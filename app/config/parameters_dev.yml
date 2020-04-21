@@ -1,0 +1,33 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: localhost
+    database_port: null
+    database_name: zephoto
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_port: 587
+    mailer_host: in-v3.mailjet.com
+    mailer_user: 12e673711937aed5a253f4f685658286
+    mailer_password: 29f24bb3792b8a5d16c1d306c95fcd78
+    secret: ThisTokenIsNotSoSecretChangeIt
+    app_Auteur: 'Christophe Zerbone'
+    app_Auteur_Email: contact@zephoto.fr
+    app_Auteur_Tel: null
+    app_Webmaster: 'Nicolas Fourgheon'
+    app_TailleServeur: 1000
+    app_Formats_Images: 'jpg,jpeg'
+    app_Taille_Images: 10 # en Mo
+    app_Galerie_Dossier: Galeries
+    app_Galerie_NbrMax: 8
+    app_Galerie_NbrMaxImg: 36
+    app_Galerie_TpsDefilement: 4000 # en Milliseconde
+    app_Galerie_TpsTransition: 500 # en Milliseconde
+    app_ImgDeFond_Dossier: ImgDeFond
+    app_ImgDeFond_NbrMax: 10
+    app_ImgDeFond_TpsDefilement: 4000 # en Milliseconde
+    app_ImgDeFond_TpsTransition: 500 # en Milliseconde
+    app_User1_Pseudo: Christophe
+    app_User1_Password: 'Cz83*'
+    app_User2_Pseudo: Nicolas
+    app_User2_Password: 2a3z4e
